@@ -77,7 +77,7 @@ p {
 #navbar li a.active::after,
 #navbar li a:hover::after{
     content :"";
-    width: 55%;
+    width: 30%;
     height: 2px;
     background-color: #98a07a;
     position: absolute;
