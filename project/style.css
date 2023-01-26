@@ -50,7 +50,7 @@ p {
     position: sticky; /*to make the navbar stick on the whole page*/
     top: 0;
     left: 0;
-
+    z-index: 99999;
 }
 #navbar{
     display: flex;
