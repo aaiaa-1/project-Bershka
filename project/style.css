@@ -50,7 +50,7 @@ p {
     position: sticky; /*to make the navbar stick on the whole page*/
     top: 0;
     left: 0;
-    z-index: 99999;
+    z-index: 99999; /*To make the navbar appear over all the content*/
 }
 #navbar{
     display: flex;
@@ -216,19 +216,52 @@ p {
     right: 50px;
 }
 
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;  
+    align-items: center;
+    background-image: url("pics/banner-pics/b14.png");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+}
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+#newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+}
+#newsletter p span{
+    color: #e63946;
+}
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25rem;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px; 
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
 
-
-/*start Media Query*/
-@media (max-width: 210px) {
-    #navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        position: fixed;
-        top: 0;
-        right: 0px;
-        height: 100vh;
-        width: 300px;
-    } 
+#newsletter button{
+    padding: 10px 20px;
+    background-color: #f4a261;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+#newsletter .form{
+    display: flex;
+    width: 40%;
 }
