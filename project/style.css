@@ -30,7 +30,7 @@ p {
     margin: 10px 0 20px 0;
 }
 .section-p1{
-    padding: 40px 150px;
+    padding: 40px 80px;
 }
 .section-m1{
     margin: 40px 0 ;
@@ -84,7 +84,13 @@ p {
     bottom: -4px;
     left: 20px ;
 } 
-
+#mobile{ /*to make the icons appear only on the iPad*/
+    display: none;
+    align-items: center;
+}
+#close{
+    display: none;
+}
 /* Home Page */
 #hero {
     background-image: url(pics/background.jpeg);
@@ -157,7 +163,7 @@ p {
 }
 #product1 .prod video,
 #product1 .prod img{
-    width: 250px;
+    width: 100%;
     border-radius: 6px;
 }
 #product1 .prod{
@@ -264,4 +270,107 @@ p {
 #newsletter .form{
     display: flex;
     width: 40%;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer  .logo{
+    margin-bottom: 30px ;
+}
+footer .follow h4{
+    margin-bottom: 15px;
+}
+footer .follow .icon a{
+    margin-right: 10px;
+}
+footer .col a{
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+footer .col h4{
+    margin-bottom: 15px;
+}
+.copyright{
+    text-align: center;
+}
+
+/*Start Media Query*/
+@media (max-width:799px) {
+    .section-p1 {
+        padding: 40px 40px;
+    }
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color:#E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px ;
+        transition: 0.4s;
+    }
+    #navbar.active{
+        right: 100px;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #mobile{ /*to make the icons appear only on the iPad*/
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color:  #444343;
+        padding-left: 20px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+    #lg-bag{
+        display: none;
+    }
+
+    #hero {
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 65%;
+        
+    }
+    #feature {
+        justify-content: center;
+    }
+    #feature .f-box {
+        margin: 15px 15px;
+    }
+    #product1 .prod-container {
+        justify-content: center;
+    }
+    #product1 .prod {
+        margin: 15px;
+    }
+    #banner img{
+        height: 150px;
+    } 
+    #newsletter .form {
+        width: 70%;
+    }
 }
