@@ -221,6 +221,32 @@ p {
     bottom: 20px;
     right: 50px;
 }
+#banner2{
+    position: relative;
+}
+#banner2 video{
+    position: relative;
+    z-index: 0;
+    height: 700px;
+    margin-left: 130px;
+}
+.overlay{
+    position: absolute;
+    top: 250px;
+    left: 650px;
+    z-index: 1;
+    text-align: center;
+}
+#banner2 .overlay h1{
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 80px;
+    margin-bottom: 20px;
+}
+#banner2 .overlay p{
+    color: #505251;
+}
+
 
 #newsletter{
     display: flex;
